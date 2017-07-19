@@ -1,0 +1,10 @@
+<div style="text-align: center;">
+<h6> Login works </h6>
+
+<form #f="ngForm"  (ngSubmit)="onSubmit(f)" >
+Username : <input type="text" name="username" [(ngModel)] ="username"> <br/><br/>
+Password : <input type="Password" name="password" [(ngModel)]="password"><br/><br/>
+
+<input type="submit" name="submit">
+</form>
+

@@ -1,0 +1,17 @@
+.productItem{
+	width: 33%;
+	float: left;
+	text-align: center;
+	}
+.card-container-phone {
+  height: 600px;
+}
+.rows{
+
+}
+.row{
+	float: left;
+}
+.hire{
+	    margin-left: -128px;
+}
