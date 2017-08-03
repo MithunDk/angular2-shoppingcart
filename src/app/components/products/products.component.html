@@ -1,3 +1,58 @@
+<<<<<<< HEAD
+<header>
+<div class="container" class="he3">
+<span>
+<button class="dropbtn" [routerLink]="['proceed']" (click)="goHide()"> Cart ({{cartService.getBoss()}}) </button>
+<div class="dropdown">
+<button class="dropbtn"><span class="glyphicon glyphicon-user"></span> Profile</button>
+<div class="dropdown-content">
+<a  (click)="signOut()"> Sign Out</a>
+</div>
+</div>
+<h3><span > Welcome {{username}}</span></h3>
+</span>
+</div>
+ 
+<!--<img [src]="url" class="logo" />-->
+
+<h2 style="text-align:center" class="hire">
+<span>
+<div class="topnav" >
+    <nav>
+    <a  [href]="" class="active" [routerLink]="['products']" (click)="goTrue()">Products</a>
+    <a  [href]="" [routerLink]="['about']" (click)="goHide()">About</a>
+    <a  [routerLink]="['proceed']" (click)="goHide()">Cart</a>
+    </nav>
+</div>
+</span>   
+</h2>
+</header>
+<br/>
+<body>
+<div class="row" class="container" *ngIf="isAbout" >
+<h4>
+  We have the following products here!
+</h4>
+<div  *ngFor="let product of products"  >
+<div class="col-xs-4">
+<div class="thumbnail product">
+<img width="250" height="250" src={{product.src}} />
+<span class="badge">{{product.id}}</span> <strong>{{product.name}}</strong>
+<p>{{product.info}}</p>
+<h1 class="badge">{{product.price}}INR</h1>
+<div><input type="number" name="quantity" min="1" max="5" [(ngModel)]="numbers"> </div><br/>
+<button (click)="selectedProduct(product)" class="btn btn-sm btn-primary">Add to Cart</button>
+</div>
+</div>
+</div>
+<br/>
+<button type="button" [disabled]="count <= 0" (click)="proceedCheck()"> Proceed to CheckOut> </button>
+</div>
+</body>
+<br />
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+=======
 <h3> welcome {{username}} </h3>
 <button type="button" (click)="signOut()"> Sign Out</button>
 <h2 style="text-align:center" class="hire">
@@ -40,3 +95,4 @@
 </div>
 
 <router-outlet></router-outlet>
+>>>>>>> origin/master

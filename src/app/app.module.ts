@@ -12,12 +12,23 @@ import { SERVICES } from './services';
 import { COMPONENTS } from './components';
 import { ACTIONS} from './store/actions';
 import { reducer } from './store/reducers';
+<<<<<<< HEAD
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+
+=======
+>>>>>>> origin/master
 
 
 @NgModule({
   declarations: [
     AppComponent,
     COMPONENTS,
+<<<<<<< HEAD
+    FooterComponent,
+    HeaderComponent,
+=======
+>>>>>>> origin/master
   ],
   imports: [
     BrowserModule,

@@ -4,4 +4,8 @@ export class Product{
 	src:string;
 	info: string;
 	price: number;
+<<<<<<< HEAD
+	quantity: number;
+=======
+>>>>>>> origin/master
 }

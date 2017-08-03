@@ -5,6 +5,6 @@
     /*font-size: 14px;*/
     font-size: 1.4rem;
     padding: 53px 56px;
-    position: fixed;
-    bottom: 0;
+    position: sticky;
+    bottom: -72px;
     }

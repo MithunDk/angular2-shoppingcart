@@ -1,10 +1,15 @@
-.site-footer{
+.site-header{
     background-color: #262626;
     color: #b3b3b3;
     text-align: center;
     /*font-size: 14px;*/
     font-size: 1.4rem;
-    padding: 53px 56px;
-    position: fixed;
-    bottom: 0;
-    }
+    padding: 30px 56px;
+   
+}
+.logo{
+    float:left;
+   max-width: 100%;
+    height: auto;
+    width:auto;
+}

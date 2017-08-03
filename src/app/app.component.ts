@@ -10,6 +10,10 @@ import { Router } from '@angular/router';
 export class AppComponent {
    constructor(public router : Router){}
 
+<<<<<<< HEAD
+  // title = 'Welcome to Shopping Portal!';
+=======
   title = 'Welcome to Shopping Portal!';
+>>>>>>> origin/master
 
 }
