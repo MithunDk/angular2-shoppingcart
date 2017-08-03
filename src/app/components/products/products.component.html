@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <header>
 <div class="container" class="he3">
 <span>
@@ -52,47 +51,5 @@
 <br />
 <router-outlet></router-outlet>
 <app-footer></app-footer>
-=======
-<h3> welcome {{username}} </h3>
-<button type="button" (click)="signOut()"> Sign Out</button>
-<h2 style="text-align:center" class="hire">
-<ul>
-<li style="display: inline;margin: 50px">
-<a routerLink="/products" > Products </a>
-</li>
-<li style="display: inline">
-<a routerLink="/about" > About </a>
-</li>
-</ul>
-</h2>
-<br/>
-<h4>
-  We have the following products here!
- </h4>
-<div class="row">
-<div *ngFor="let product of products" class="rows" >
-            <div class="col-xs-4">
-            <div class="thumbnail product">
-                <img width="250" height="250" src={{product.src}} />
-                <span class="badge">{{product.id}}</span> <strong>{{product.name}}</strong>
-                <p>{{product.info}}</p>
-                <h1 class="badge">{{product.price}}INR</h1>
-                <button (click)="selectedProduct(product)" class="btn btn-sm btn-primary">Add to Cart</button>
-            </div>
-            </div>
-</div>
-
-<!--<div id="productList">
-    <div *ngFor= "let product of productList" class="productItem">
-    {{product}}
-    <button type="button" (click)="selectedProduct(product)"> Add to Cart</button> 
-</div>-->
-<br/>
 
 
-<button type="button"> Cart ({{count}}) </button>
-<button type="button" [disabled]="count <= 0" (click)="proceedCheck()"> Proceed to CheckOut> </button>
-</div>
-
-<router-outlet></router-outlet>
->>>>>>> origin/master

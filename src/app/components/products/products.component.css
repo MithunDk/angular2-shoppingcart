@@ -1,18 +1,8 @@
-<<<<<<< HEAD
-/*.productItem{
-	width: 33%;
-	float: left;
-	text-align: center;
-	}*/
+
 .card-container-phone {
   height: 600px;
 }
 
-/*.row{
-	
-  margin-right: 83px;
-  margin-left: 75px;
-}*/
 .hire{
 	    margin-left: -128px;
 }
@@ -23,11 +13,8 @@
 }
 
 .he3{
-	/*margin-bottom: -4px;
-	float: right;*/
-	    /*margin-right: -52pc;*/
-    margin-right: -56pc;
-        margin-top: -3pc;
+	margin-right: -56pc;
+    margin-top: -3pc;
 }
 .footers{
 	position: fixed;
@@ -105,22 +92,6 @@
 /*.topnav a.active {
     background-color: #4CAF50;
 }*/
-=======
-.productItem{
-	width: 33%;
-	float: left;
-	text-align: center;
-	}
-.card-container-phone {
-  height: 600px;
-}
-.rows{
 
-}
-.row{
-	float: left;
-}
-.hire{
-	    margin-left: -128px;
-}
->>>>>>> origin/master
+
+

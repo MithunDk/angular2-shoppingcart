@@ -9,11 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
    constructor(public router : Router){}
+title = 'Welcome to Shopping Portal!';
 
-<<<<<<< HEAD
-  // title = 'Welcome to Shopping Portal!';
-=======
-  title = 'Welcome to Shopping Portal!';
->>>>>>> origin/master
 
 }
