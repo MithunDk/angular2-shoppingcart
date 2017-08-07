@@ -1,17 +1,23 @@
-<div style="text-align: center;">
-<h4> Login Page </h4>
-<div class="container">
+<header>
+<div class="container" >
+<span><img [src]="url" class="logo"  /></span>
+</div>
+</header>
+<body>
+<div class="place">
+<!--<h4> Login Page </h4>-->
+
+<div class="placer">
+<span>
 <form #f="ngForm"  (ngSubmit)="onSubmit(f)" >
 Username : <input type="text" name="username" [(ngModel)] ="username" required> <br/><br/>
 Password : <input type="Password" name="password" [(ngModel)]="password" required><br/><br/>
-
 <input type="submit" name="submit">
 </form>
+</span>
 </div>
-<div style="height:100%;width:100%;">
-		 <img [src]="url" class="logo" style="max-width:100%;margin-bottom: -47px;" />
-		 </div>
-
+</div>
+</body>
 <footer class="site-footer" id="footer" role="contentinfo">
 		<div class="container">
 			<p>Hongkiat.com (HKDC). All Rights Reserved. 2017</p>

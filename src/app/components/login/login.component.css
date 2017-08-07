@@ -9,11 +9,15 @@
     bottom: 0;
     }
 .logo{
-    float:left;
-   max-width: 100%;
+        max-width: 100%;
     height: auto;
-    width:auto;
-        margin-top: -21pc;
-        margin-left: 28pc;
-            padding: 22px;
+    width: auto;
+        margin-top: -20pc;
+}
+
+.place{
+        margin-top: -1pc;
+}
+.placer{
+    position: sticky;
 }
