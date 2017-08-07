@@ -8,3 +8,12 @@
     position: fixed;
     bottom: 0;
     }
+.logo{
+    float:left;
+   max-width: 100%;
+    height: auto;
+    width:auto;
+        margin-top: -21pc;
+        margin-left: 28pc;
+            padding: 22px;
+}

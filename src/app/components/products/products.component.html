@@ -1,39 +1,48 @@
 <header>
-<div class="container" class="he3">
-<span>
-<button class="dropbtn" [routerLink]="['proceed']" (click)="goHide()"> Cart ({{cartService.getBoss()}}) </button>
-<div class="dropdown">
-<button class="dropbtn"><span class="glyphicon glyphicon-user"></span> Profile</button>
+<div class="container" >
+<span >
+<!--<div class="dropdown">
+<button class="dropbtn" class="btn btn-default btn-lg btn-block responsive-width"><span class="glyphicon glyphicon-user"></span> Profile</button>
 <div class="dropdown-content">
 <a  (click)="signOut()"> Sign Out</a>
 </div>
-</div>
-<h3><span > Welcome {{username}}</span></h3>
+</div>-->
+<span ><h3> Welcome {{username}}</h3></span>
 </span>
+<div>
+<img [src]="url" class="logo" style="max-width:100%;margin-bottom: -47px;" />
 </div>
- 
-<!--<img [src]="url" class="logo" />-->
-
-<h2 style="text-align:center" class="hire">
+<h2  class="hire">
 <span>
-<div class="topnav" >
-    <nav>
-    <a  [href]="" class="active" [routerLink]="['products']" (click)="goTrue()">Products</a>
-    <a  [href]="" [routerLink]="['about']" (click)="goHide()">About</a>
-    <a  [routerLink]="['proceed']" (click)="goHide()">Cart</a>
-    </nav>
+<div>
+<ul class="nav nav-pills" >
+   <li class="active" > <a   [routerLink]="['products']" (click)="goTrue()">Products</a> </li>
+   <li class="active"> <a  [routerLink]="['about']" (click)="goHide()">About</a></li>
+   <li  class="active"> <a  [routerLink]="['proceed']" (click)="goHide()">Cart ({{cartService.getBoss()}})</a></li>
+   <li class="active">
+       <div class="dropdown">
+         <button class="dropdown" class="btn btn-default btn-lg btn-block responsive-width"><span class="glyphicon glyphicon-user"></span> Profile</button>
+         <div class="dropdown-content">
+         <a  (click)="signOut()"> Sign Out</a>
+         </div>
+         </div>
+    </li>
+</ul>
 </div>
-</span>   
+</span>
 </h2>
+</div>
 </header>
+
 <br/>
 <body>
 <div class="row" class="container" *ngIf="isAbout" >
+<div class="place">
 <h4>
   We have the following products here!
 </h4>
 <div  *ngFor="let product of products"  >
-<div class="col-xs-4">
+<div class="col-xs-6 col-md-3 col-sm-3 col-lg-3">
 <div class="thumbnail product">
 <img width="250" height="250" src={{product.src}} />
 <span class="badge">{{product.id}}</span> <strong>{{product.name}}</strong>
@@ -46,6 +55,7 @@
 </div>
 <br/>
 <button type="button" [disabled]="count <= 0" (click)="proceedCheck()"> Proceed to CheckOut> </button>
+</div>
 </div>
 </body>
 <br />

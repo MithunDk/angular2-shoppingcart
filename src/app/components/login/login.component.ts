@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   constructor( public router: Router) { }
-
+url = '../../assets/phones/logo.png';
 onSubmit(form){
 console.log(form.form.value);
 
