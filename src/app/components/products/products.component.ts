@@ -19,16 +19,23 @@ cartService: CartAction;
               this.cartService = cartStore;
                }
 url = '../../assets/phones/logo.png';
+urls ='../../assets/phones/logos.png';
+ur = '../../assets/phones/logoname.jpg';
 username = 'Mithun !';
 products: Product[];
 quantity: number;
-
+isIn = false;   // store state
+   
 public cart :Array<any> = new Array<any>() ;
 public carts =[];
 public count : number;
 productList =['sony','xperia','iphone'];
 
 isAbout = true;
+ toggleState() { // click handler
+        let bool = this.isIn;
+        this.isIn = bool === false ? true : false; 
+    }
 goHide(){
 this.isAbout= false;
 }

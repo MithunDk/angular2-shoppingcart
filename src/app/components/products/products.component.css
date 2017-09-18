@@ -2,21 +2,25 @@
   height: 600px;
 }
 .place{
-        margin-top: -3pc;
+        margin-top: -5pc;
 }
 h3{
     float: right;
-    margin-top: -8pc;
+    margin-top: -90px;
+        margin-right: 13px;
 }
 .hire{
 	margin-left: -102px;
+        margin-top: 49px;
 }
 .logo{
     float:left;
    max-width: 100%;
     height: auto;
     width:auto;
-    margin-top: -12pc;
+    margin-top: -9pc;
+    margin-left: -14px;
+    
 }
 
 .he3{
@@ -102,4 +106,37 @@ h3{
       border-radius: 70px;
           color: yellowgreen
     }
-
+.navbar-default {
+    background-color: #f8f8f8;
+    /* border-color: #e7e7e7; */
+}
+.navbar {
+    
+    min-height: 0px;
+    margin-bottom: 0pc;
+    border: 1px solid transparent;
+}
+.navbar-default .navbar-toggle {
+    border-color: black;
+        margin-top: -115px;
+           margin-right: 27pc;
+        }
+.logos{
+    margin-top: -12pc;
+    margin-left: -88px;
+}
+.logoname{
+       margin-top: -2pc;
+    margin-left: -5pc;
+}
+.bos{
+    margin-top: -7pc;
+    margin-right: 23pc;       
+}
+.collapse.in {
+    display: block;
+    padding-top: 3pc;
+}
+.boss{
+        margin-top: -4pc;
+}

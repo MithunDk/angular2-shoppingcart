@@ -9,13 +9,33 @@
 </div>-->
 <span ><h3> Welcome {{username}}</h3></span>
 </span>
-<div>
+<div  class="collapse navbar-collapse" >
 <img [src]="url" class="logo" style="max-width:100%;margin-bottom: -47px;" />
 </div>
+
+<div class="visible-xs">
+<img [src]="urls" class=" collapsed"  class="logos" />
+<img [src]="ur"  class="collapsed" class="logoname" />
+</div>
+
 <h2  class="hire">
 <span>
-<div>
-<ul class="nav nav-pills" >
+
+<div id="parent" class="container-fluid">
+  <nav class="navbar navbar-default visible-xs">
+<div class="navbar-header" style="margin-right: -26pc;" >
+      <button type="button" class="navbar-toggle collapsed" (click)="toggleState()" >
+      <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+         <span class="navbar-toggler-icon"></span>
+     </button>
+      
+    </div>
+    </nav>
+    <div  class="collapse " [ngClass]="{'in': isIn }"  >
+   <div class="bos">
+   <ul class="nav nav-pills" >
    <li class="active" > <a   [routerLink]="['products']" (click)="goTrue()">Products</a> </li>
    <li class="active"> <a  [routerLink]="['about']" (click)="goHide()">About</a></li>
    <li  class="active"> <a  [routerLink]="['proceed']" (click)="goHide()">Cart ({{cartService.getBoss()}})</a></li>
@@ -28,9 +48,28 @@
          </div>
     </li>
 </ul>
+</div> 
 </div>
+<div class="boss hidden-xs">
+   <ul class="nav nav-pills" >
+   <li class="active" > <a   [routerLink]="['products']" (click)="goTrue()">Products</a> </li>
+   <li class="active"> <a  [routerLink]="['about']" (click)="goHide()">About</a></li>
+   <li  class="active"> <a  [routerLink]="['proceed']" (click)="goHide()">Cart ({{cartService.getBoss()}})</a></li>
+   <li class="active">
+       <div class="dropdown">
+         <button class="dropdown" class="btn btn-default btn-lg btn-block responsive-width"><span class="glyphicon glyphicon-user"></span> Profile</button>
+         <div class="dropdown-content">
+         <a  (click)="signOut()"> Sign Out</a>
+         </div>
+         </div>
+    </li>
+</ul>
+</div> 
+</div>
+
 </span>
 </h2>
+
 </div>
 </header>
 
@@ -38,9 +77,11 @@
 <body>
 <div class="row" class="container" *ngIf="isAbout" >
 <div class="place">
+<div class="words">
 <h4>
   We have the following products here!
 </h4>
+</div>
 <div  *ngFor="let product of products"  >
 <div class="col-xs-6 col-md-3 col-sm-3 col-lg-3">
 <div class="thumbnail product">
@@ -54,7 +95,7 @@
 </div>
 </div>
 <br/>
-<button type="button" [disabled]="count <= 0" (click)="proceedCheck()"> Proceed to CheckOut> </button>
+<!--<button type="button" [disabled]="count <= 0" (click)="proceedCheck()"> Proceed to CheckOut> </button>-->
 </div>
 </div>
 </body>
